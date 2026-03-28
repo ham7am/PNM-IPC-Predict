@@ -342,3 +342,10 @@ ax.set_xlabel('PC1')
 ax.set_ylabel('PC2')
 ax.set_zlabel('PC3')
 plt.show()
+
+
+# Next time i wanna change something
+# git add .                         {puts it into a queue - everything}
+#   OR git add [filename]           {puts it into a queue - files specified}
+# git commit -m '[description]'     {puts it together into one thing}
+# git push -u origin main           {puts changes into cloud}
