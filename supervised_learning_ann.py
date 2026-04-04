@@ -135,3 +135,8 @@ for i in range(3):
 plt.suptitle('Parity Plots', fontsize=14)
 plt.tight_layout()
 plt.show()
+
+
+# Save predictions and actuals to .npy files
+np.save('ann_predictions.npy', predictions)
+np.save('ann_actuals.npy', actuals)

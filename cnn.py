@@ -214,3 +214,7 @@ all_predictions_unscaled = Y_scaler.inverse_transform(all_predictions.cpu().nump
 
 for i in range(all_actuals_unscaled.shape[1]):
     plot_parity(all_actuals_unscaled[:, i], all_predictions_unscaled[:, i], title=f'Cross-Validation Parity Plot: Output {i+1}')
+
+# Save predictions and actuals to .npy files
+np.save('cnn_predictions.npy', all_predictions_unscaled)
+np.save('cnn_actuals.npy', all_actuals_unscaled)
